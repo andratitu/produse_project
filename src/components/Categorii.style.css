@@ -1,0 +1,94 @@
+/* .categorii{
+    
+display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: stretch;
+}
+
+.container1{
+   
+    background-color: white;
+    height: 400px;
+    width: 350px;
+    
+ 
+    
+}
+.container2{
+background-color: white;
+    height: 400px;
+    width: 350px;
+    
+   
+}
+.container3{
+background-color: white;
+    height: 400px;
+
+    width: 350px;
+    
+}
+
+
+
+
+
+.poza1{
+    margin-top: 100px;
+   
+    width: 200px;
+    height: 200px; */
+    /* position: absolute;
+        top: 0;
+        left: 0; */
+/* }
+.poza2{
+    margin-top: 100px;
+    width: 200px;
+    height: 200px;
+}
+.poza3{
+    margin-top: 100px;
+    width: 200px;
+    height: 200px;
+} */
+
+
+
+.big-container {
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* alte stiluri aici */
+}
+
+.small-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(50, 50, 50);
+    /* alte stiluri aici */
+}
+
+.text-left {
+    flex: 1;
+    /* alte stiluri aici */
+}
+
+.img-right {
+    margin-left: auto;
+    height: 300px;
+    width: 300px;
+    /* alte stiluri aici */
+}
+
+.button{
+    font-style: italic;
+    border: none;
+        background-color: transparent;
+        color:rgb(46, 46, 46);
+        cursor: pointer;
+}
