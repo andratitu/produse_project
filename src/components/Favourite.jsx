@@ -28,8 +28,8 @@ function Favourite() {
 			</p>
 			{productList ? (
 				<div>
-					<div className='product_list1 '>
-						<Row>
+					<div className='product_list1 m-5'>
+						<Row xs='1' lg='4'>
 							{productList.map((product, index) => {
 								return (
 									<ProductComponent

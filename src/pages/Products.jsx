@@ -25,13 +25,17 @@ function Products() {
 	return (
 		<>
 			{productList && categoryList ? (
-				<div className='d-flex flex-sm-column flex-lg-row'>
+				<div className='prod'>
 					<div className='category_list m-4 d-flex flex-column'>
 						<h3>Categories List</h3>
 						{categoryList.map((category, index) => {
 							return (
-								<h6 key={"category_" + index}>
-									{category.id}-{category.electronics}
+								<h6
+									key={"category_" + index}
+									onClick={() => {
+										setCategoryList(category);
+									}}>
+									{category}
 								</h6>
 							);
 						})}
@@ -45,8 +49,14 @@ function Products() {
 								setTextInput(event.target.value);
 							}}
 						/>
-						<Row>
+						<Row xs='1' lg='5' className='card-deck'>
 							{productList
+								.filter((product) => {
+									return (
+										selectedCategory === null ||
+										selectedCategory === product.category
+									);
+								})
 								.filter((product) => {
 									return (
 										product.description.includes(textInput) ||
